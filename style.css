@@ -17,6 +17,14 @@
         border-top: 1px solid grey;
     }
 
+    #main-top {
+          font-size: 45px;
+          text-decoration: none;
+          text-align: center;
+          border-bottom: 1px solid gray;
+          margin: 0px;
+          padding: 20px;
+      }
 
     #main-menu > a {
         padding-right: 20px;
