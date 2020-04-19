@@ -5,16 +5,23 @@
         margin: 0px;
         padding: 20px;
     }
+
     a {
         color: black;
         text-decoration: none;
     }
+
+    input {
+        border-color: #0cebeb;
+
+    }
+
     #grid {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-          }
+          display: grid;
+          grid-template-columns: 150px 1fr;
+              }
     #footer {
-        border-top: 1px solid grey;
+          border-top: 1px solid grey;
     }
 
     #main-top {
@@ -27,15 +34,14 @@
       }
 
     #main-menu > a {
-        padding-right: 20px;
+          padding-right: 20px;
     }
-    #main-menu {
-        border-bottom: 1px solid gray;
 
+    #main-menu {
+          border-bottom: 1px solid gray;
       }
 
     #main-top {
-          font-size: 45px;
           text-decoration: none;
           text-align: center;
           border-bottom: 1px solid gray;
