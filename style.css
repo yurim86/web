@@ -1,9 +1,9 @@
 <style>
     ul {
         border-right: 1px solid grey;
-        width: 100px;
-        margin: 0px;
-        padding: 20px;
+        width: 100rem;
+        margin: 0rem;
+        padding: 20rem;
     }
     a {
         color: black;
@@ -17,9 +17,8 @@
     .contents {
         color: #003366;
     }
-
     #main-top {
-          background-image: url("bg_top.jpg");
+          background-image: url("bg_top.JPG");
           text-decoration: none;
           text-align: center;
           border-bottom: 1px solid gray;
@@ -29,6 +28,7 @@
 
     #main-menu > a {
         padding-right: 20px;
+        text-align: center;
     }
     #main-menu {
         border-bottom: 1px solid gray;
