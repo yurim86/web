@@ -45,6 +45,8 @@
             font-size: 1.5rem;
             font-family: arial, sans-serif;
     }
-
+    [class*="article"] {
+      width: 100%;  
+    }
 
 </style>
