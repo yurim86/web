@@ -1,4 +1,5 @@
 <style>
+    body {background-attachment: scroll;}
     ul {
         border-right: 1px solid grey;
         width: 100rem;
@@ -26,10 +27,12 @@
 
     #main-menu {
             border-bottom: 1px solid gray;
+            background-image: linear-gradient(to right, #43C6AC , #F8FFAE);
+            color: #ffffff;
     }
 
     #main-top {
-            background-image: url("bg_top.JPG");
+            background-image: linear-gradient(to right, #43C6AC , #F8FFAE);
             text-decoration: none;
             text-align: center;
             border-bottom: 1px solid gray;
@@ -40,6 +43,7 @@
     #login-tip {
             font-size: 1.5rem;
             font-family: arial, sans-serif;
-
     }
+
+
 </style>
