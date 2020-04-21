@@ -1,9 +1,13 @@
 <style>
-    body {background-attachment: scroll;}
-
     *{    
         box-sizing: border-box;
     }
+    @media (max-width:500px) {
+        
+    }
+
+    body {background-attachment: scroll;}
+
     .container {
         display: flex;
         flex-direction: column;
@@ -11,6 +15,9 @@
         
     }
     nav {
+        background-image: linear-gradient(to right, #141E30 , #243B55);
+        padding: 5px;
+        border-bottom: 1px solid #bdc3c7;
       /*  position: fixed;
         top: 200px; */
     }
@@ -43,19 +50,13 @@
         color: #003366;
     }
 
-    #main-menu > a {
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
+    #main-menu > a {  
+        padding-right: 10px;
+        padding-left: 10px;
         color: #bdc3c7;
     }
 
-    #main-menu {
-            padding: 5px;
-            border-bottom: 1px solid #bdc3c7;
-            background-image: linear-gradient(to right, #141E30 , #243B55);
 
-    }
 
     #main-top {
             background-image: url("bg_top.JPG");
