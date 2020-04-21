@@ -23,12 +23,13 @@
     #main-menu > a {
         padding-right: 20px;
         text-align: center;
+        color: #bdc3c7;
     }
 
     #main-menu {
             border-bottom: 1px solid #bdc3c7;
             background-image: linear-gradient(to right, #141E30 , #243B55);
-            color: #bdc3c7;
+
     }
 
     #main-top {
