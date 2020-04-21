@@ -26,16 +26,16 @@
     }
 
     #main-menu {
-            border-bottom: 1px solid gray;
-            background-image: linear-gradient(to right, #43C6AC , #F8FFAE);
-            color: #ffffff;
+            border-bottom: 1px solid #bdc3c7;
+            background-image: linear-gradient(to right, #141E30 , #243B55);
+            color: #bdc3c7;
     }
 
     #main-top {
-            background-image: linear-gradient(to right, #43C6AC , #F8FFAE);
+            background-image: url("bg_top.JPG");
             text-decoration: none;
             text-align: center;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid #bdc3c7;
             margin: 0px;
             padding: 80px;
     }
