@@ -7,7 +7,18 @@
     }
 
     body {font-family: arial, sans-serif;}
+    #Notice {
+        position: fixed;
+        filter: opacity(80%);
+        top: 0;
+        width: 100%;
+        background-color: aquamarine;
+        font-size: 15px;
+    }
+    #N_img {
+        padding-left: 5px;
 
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -25,10 +36,10 @@
     #moveTop {
         position: fixed;
         filter: opacity(80%);
-        right:10px;
-        bottom:10px;
-        width: 100px;
-        height: 100px;
+        right:20px;
+        bottom:20px;
+        width: 50px;
+        height: 50px;
         
     }
     main {
