@@ -6,7 +6,13 @@
         
     }
 
-    body {font-family: arial, sans-serif;}
+    html {
+        font-family: arial, sans-serif;
+        background-image: url("hello_mar.jpg");
+        background-size: cover;
+        color: white;
+    }
+
     #Notice {
         position: fixed;
         filter: opacity(80%);
@@ -79,8 +85,6 @@
     }
 
     #main-top {
-            background-image: url("bg_top.JPG");
-            background-size: cover;
             text-decoration: none;
             text-align: center;
             /*border-bottom: 1px solid #bdc3c7;*/
