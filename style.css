@@ -29,6 +29,7 @@
         background-image: linear-gradient(to right, #2C5364 , #203A43);
         padding: 0px;
         border-bottom: 1px solid #bdc3c7;
+        
       /*  position: fixed;
         top: 200px; */
     }
@@ -44,7 +45,7 @@
     }
     main {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding: 20px;
         text-align: justify;
         
