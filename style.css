@@ -34,7 +34,6 @@
     nav {
         display: flex;
         flex-direction: row;
-        padding: 0px;
         width: 100%;
         position: -webkit- sticky; /* Safari */
         position: sticky;
@@ -86,7 +85,8 @@
     a {
         color: white;
         text-decoration: none;
-        padding: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     a:hover {
@@ -100,15 +100,6 @@
         color: #003366;
     }
 
-
-	
-
- /*  #main-menu > a {  
-        padding-right: 10px;
-        padding-left: 10px;
-        margin: 0;
-        color: #bdc3c7;
-    }*/
 
     #main-top {
             text-decoration: none;
