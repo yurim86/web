@@ -5,16 +5,30 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-  <style type="text/css">
+  <style>
+    @media (max-width:360px){html{font-size:11px}}
+    @media (min-width:361px) and (max-width:399px){html{font-size:12px}}
+    @media (min-width:400px) and (max-width:439px){html{font-size:13px}}
+    @media (min-width:440px) and (max-width:479px){html{font-size:14px}}
+    @media (min-width:480px){html{font-size:15px}}
+    @media (min-width:480px) and (max-width:519px){html{font-size:15px}}
+    @media (min-width:520px) and (max-width:559px){html{font-size:16px}}
+    @media (min-width:560px) and (max-width:599px){html{font-size:17px}}
+    @media (min-width:600px) and (max-width:639px){html{font-size:18px}}
+    @media (min-width:640px) and (max-width:679px){html{font-size:19px}}
+    @media (min-width:680px) and (max-width:719px){html{font-size:20px}}
+    @media (min-width:720px) and (max-width:759px){html{font-size:21px}}
+    @media (min-width:760px) and (max-width:799px){html{font-size:22px}}
+    @media (min-width:800px) and (max-width:839px){html{font-size:23px}}
+    @media (min-width:840px) and (max-width:879px){html{font-size:24px}}
+    @media (min-width:880px){html{font-size:25px}}
+    
+    img{width:auto}  
     html, body {
       margin: 0;
       padding: 0;
     }
-    .sample contents {
 
-        
-    }
-      
     * {
       box-sizing: border-box;
     }
@@ -48,13 +62,15 @@
     .slick-current {
       opacity: 1;
     }
+    
+    .swiper-scrollbar-lock{display:none}.swiper-zoom-container{width:100%;height:100%;display:flex;justify-content:center;align-items:center;text-align:center}.swiper-zoom-container>canvas,.swiper-zoom-container>img,.swiper-zoom-container>svg{max-width:100%;max-height:100%;object-fit:contain}.swiper-slide-zoomed{cursor:move}.swiper-lazy-preloader{width:42px;height:42px;position:absolute;left:50%;top:50%;margin-left:-21px;margin-top:-21px;z-index:10;-webkit-transform-origin:50%;transform-origin:50%;-webkit-animation:swiper-preloader-spin 1s steps(12) infinite;animation:swiper-preloader-spin 1s steps(12) infinite}.swiper-lazy-preloader:after{display:block;content:"";width:100%;height:100%;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath id='a' stroke='%236c6c6c' stroke-width='11' stroke-linecap='round' d='M60 7v20'/%3E%3C/defs%3E%3Cuse xlink:href='%23a' opacity='.27'/%3E%3Cuse xlink:href='%23a' opacity='.27' transform='rotate(30 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.27' transform='rotate(60 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.27' transform='rotate(90 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.27' transform='rotate(120 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.27' transform='rotate(150 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.37' transform='rotate(180 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.46' transform='rotate(210 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.56' transform='rotate(240 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.66' transform='rotate(270 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.75' transform='rotate(300 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.85' transform='rotate(330 60 60)'/%3E%3C/svg%3E");background-position:50%;background-size:100%;background-repeat:no-repeat}.swiper-lazy-preloader-white:after{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath id='a' stroke='%23fff' stroke-width='11' stroke-linecap='round' d='M60 7v20'/%3E%3C/defs%3E%3Cuse xlink:href='%23a' opacity='.27'/%3E%3Cuse xlink:href='%23a' opacity='.27' transform='rotate(30 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.27' transform='rotate(60 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.27' transform='rotate(90 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.27' transform='rotate(120 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.27' transform='rotate(150 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.37' transform='rotate(180 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.46' transform='rotate(210 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.56' transform='rotate(240 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.66' transform='rotate(270 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.75' transform='rotate(300 60 60)'/%3E%3Cuse xlink:href='%23a' opacity='.85' transform='rotate(330 60 60)'/%3E%3C/svg%3E")}@-webkit-keyframes swiper-preloader-spin{to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes swiper-preloader-spin{to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
   </style>
 </head>
     
 <body>
       <section style="background-color: #e8e8e8; height: 740px;">
         <div>
-            <img src="%EC%82%BC%EC%84%B1%ED%99%94%EC%9E%AC%EB%B3%B4%EC%83%81%EC%BD%9C.png" style="display: block; margin-left: auto; margin-right: auto; padding-top: 20%;">
+            <h2 style="text-align: center; color:darkgray; margin-left: auto; margin-right: auto; padding-top: 20%;">삼성화재보상콜</h2>
             <p style="text-align: center; color:darkblue;">컨텐츠 준비중입니다.</p>
         </div>
       </section>
@@ -82,15 +98,16 @@
 
       <section style="background-color: ##FFEFBA; height: 740px;">
         <div>
-            <img src="%EC%82%BC%EC%84%B1%ED%99%94%EC%9E%AC%EB%B3%B4%EC%83%81%EC%BD%9C.png" style="display: block; margin-left: auto; margin-right: auto; padding-top: 20%;">
+            <h2 style="text-align: center; color:darkgray; margin-left: auto; margin-right: auto; padding-top: 20%;">삼성화재보상콜</h2>
             <p style="text-align: center; color:darkorange;">컨텐츠 준비중입니다.</p>
         </div>
       </section>
       
       <section style="background-color: #FFEEEE; height: 740px;">
         <div>
-            <img src="%EC%82%BC%EC%84%B1%ED%99%94%EC%9E%AC%EB%B3%B4%EC%83%81%EC%BD%9C.png" style="display: block; margin-left: auto; margin-right: auto; padding-top: 20%;">
+            <h2 style="text-align: center; color:darkgray; margin-left: auto; margin-right: auto; padding-top: 20%;">삼성화재보상콜</h2>
             <p style="text-align: center; color:lightpink;">컨텐츠 준비중입니다.</p>
+            <img src="%EC%82%BC%EC%84%B1%ED%99%94%EC%9E%AC%EB%B3%B4%EC%83%81%EC%BD%9C.png">
         </div>
       </section>
       
