@@ -7,6 +7,17 @@
         body {
           background-color: #E2E2E2;
         }
+        
+        #btn_speechbubble {
+            position: relative;
+            animation: mymove 2s infinite;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes mymove {
+          from {left: 0px;}
+          to {left: 10rem;}
+        }
+
     </style>
 
     <title>차세대web-Login</title>
@@ -23,9 +34,25 @@
             <input type="submit" value="LOGIN" style="height:35px; width: 207px; background: #243B55; color: #fff; border: none; border-radius: 25px;">
           </form>
     </div>
-            <div style="display: block; margin-top: 10%; margin-left: auto; margin-right: auto; text-align: center;">
-                <a href="inquire.html" style="color: dodgerblue; font-size: 14px;"> 로그인이 실패시 여기를 클릭하세요!</a>
-            </div>
+    
+    <div style="display: block; margin-top: 50%; margin-left: auto; margin-right: auto; text-align: center;">
+         <img src="%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B6%88%EA%B0%80%EC%8B%9C.png" style="width: 15rem; position: absolute; bottom: 1rem; right: 8rem;" id="btn_speechbubble">
+    </div>
+    
+    
+    <!--채팅 시작Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5eec75904a7c6258179aee35/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--채팅 끝End of Tawk.to Script-->
     
   </body>
 </html>
