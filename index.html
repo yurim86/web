@@ -92,6 +92,18 @@
         line-height: 3.8rem;      
     }
     a { text-decoration: none;}
+      
+    .move {
+        position: relative;
+        animation: mymove 2s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes mymove {
+      from {left: -30rem;}
+      to {left: 0;}
+    }
+      
   </style>
 </head>
     
@@ -115,14 +127,14 @@
 
       <section style="background-color: #eef2f3; height: 1650px;">
         <ul>
-            <div class="animated fadeInLeft" style="animation-delay: 100ms; animation-duration: 1000ms; pointer-events: all;">
-                <li><img src="image/about1.png" alt="삼성화재보상콜은요," style="width: 92%; margin: 1.5rem;"></li>
+            <div class="move">
+                <li><img src="image/about1.png" alt="삼성화재보상콜은요," style="width: 92%; margin: 1.5rem; margin-bottom: 0;"></li>
             </div>
-            <div class="animated fadeInLeft" style="animation-delay: 400ms; animation-duration: 1000ms; pointer-events: all;">
-                <li><img src="image/about2.png" alt="삼성화재보상콜은요~" style="margin-bottom: 1em;"></li>
+            <div class="move">
+                <li><img src="image/about2.png" alt="삼성화재보상콜은요," style="width: 92%; margin: 1.5rem; margin-bottom: 0;"></li>
             </div>
-            <div class="animated fadeInLeft" style="animation-delay: 400ms; animation-duration: 1000ms; pointer-events: all;">
-                <li><img src="image/about3.png" alt="삼성화재보상콜은요!" style="margin-bottom: 1em;"></li>
+            <div class="move">
+                <li><img src="image/about3.png" alt="삼성화재보상콜은요," style="width: 92%; margin: 1.5rem; "></li>
             </div>
         </ul>
       </section>
