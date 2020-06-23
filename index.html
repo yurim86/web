@@ -67,9 +67,9 @@
       opacity: 1;
     }
     
-    ul{
-      list-style: none;
-      padding: 0;
+    ul {
+        list-style: none;
+        padding: 0;
     }
     
     #moveTop {
@@ -79,20 +79,23 @@
         bottom: 10px;
  
     }
+      
+ /* 자세히보기    */     
     #btnview{
         display: inline-block;
         position: absolute;
         top: 40rem;
         left: 2rem;
-        width: 16rem;
-        height: 4rem;
+        width: 14rem;
+        height: 3rem;
         border: 0.05rem solid #fff;
         color: #fff;
         text-align: center;
-        line-height: 3.8rem;      
+        line-height: 3rem;      
     }
     a { text-decoration: none;}
-      
+
+/* 애니메이션  시작   */
     .move {
         position: relative;
         animation: mymove 2s;
@@ -100,28 +103,93 @@
     }
 
     @keyframes mymove {
-      from {left: -30rem;}
-      to {left: 0;}
+        from {left: -30rem;}
+        to {left: 0;}
+    }
+      
+/* nav CSS    */   
+    nav {
+        position: fixed;
+        flex-direction: row;
+        width: 100%;
+        top 0;
+    }
+    nav > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    nav > ul > li {
+        float: left;
+    }
+
+    nav > ul > li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+      
+    nav > ul > li a:hover {
+        background-color: #111;
+    }  
+    .dropbtn {
+        background-color: dodgerblue;
+    }  
+
+    .dropdown-content {
+        display: none; /* 평상시에는 서브메뉴가 안보이게 하기 */
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 15rem;
+/*        height: 50rem;*/
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:hover {background-color: dodgerblue;}
+
+    .dropdown:hover .dropdown-content {
+        display: block; /* 마우스 커서 올리면 서브메뉴 보이게 하기 */
     }
       
   </style>
 </head>
     
 <body>
-<!--
-    <nav id="nav">
-        <ul>
-            <li>HOME</li>
-            <li>MENU1</li>
-            <li>MENU2</li>
-            <li>MENU3</li>        
+
+    <nav>
+        <ul >
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">〓</a>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                      <a href="#">Link 4</a>
+                    </div>
+            </li>
+            <li class="navli"><a href="#">MENU1</a></li>
+            <li class="navli"><a href="#">MENU2</a></li>
+            <li class="navli"><a href="#">MENU3</a></li>        
+
         </ul>
     </nav>
--->
+
 
       <div style="background-color: gold; height: 45rem;">
           <a href="#" id="btnview">
-              <span style="font-size: 2em;">자세히보기</span>
+              <span style="font-size: 1.5em;">자세히보기</span>
           </a>
       </div>
 
