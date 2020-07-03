@@ -108,13 +108,19 @@
         to {left: 0;}
     }
       
-
       
 /*햄버거 메뉴*/
     #ham {
         display: flex;
         padding: 10px;
         background-color: #333;
+        height: 80px;
+        align-items: center;
+    }
+    #logo {
+        display: block;
+        align-items: center;
+          
     }
     .hambtn {
         position: relative;
@@ -124,7 +130,7 @@
     }
     .hambtn span {
         position: absolute;
-        height: 7px;
+        height: 5px;
         border-radius: 4px;
         width: 100%;
         background: #fff;
@@ -321,8 +327,7 @@
           margin-top: 1rem;
     }
    
-      
-      
+
   </style>
 
 </head>
@@ -335,6 +340,9 @@
             <span></span>
             <span></span>
          </a>
+     </span>
+     <span id="logo">
+         <a href="index.html"><img src="image/logo.png" style="width: 10%;"></a>
      </span>
      <div class="overlay">
          <nav class="menu">
