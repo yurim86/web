@@ -129,22 +129,22 @@
         float: left;
     }
 
-    nav > ul > li a {
+    .dropbtn{
         display: block;
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 1.2rem 1rem;
         text-decoration: none;
-
     }
-
-    nav > ul > li a:hover {
+    .navli {
+        float: none;
+        position: relative;
+        transform:translateX(30%)
+    }
+    .navli :hover {
         background-color: #111;
     }  
-    .dropbtn {
-        background-color: dodgerblue;
-    }  
-
+ 
     .dropdown-content {
         display: none; /* 평상시에는 서브메뉴가 안보이게 하기 */
         position: absolute;
@@ -161,7 +161,7 @@
         display: block;
         text-align: left;
     }
-    .dropdown-content a:hover {background-color: dodgerblue;}
+    .dropdown-content a:hover {background-color: #333; color: white;}
 
     .dropdown:hover .dropdown-content {
         display: block; /* 마우스 커서 올리면 서브메뉴 보이게 하기 */
@@ -291,10 +291,7 @@
                       <a href="#">Link 4</a>
                     </div>
             </li>
-            <li class="navli"><a href="#">MENU1</a></li>
-            <li class="navli"><a href="#">MENU2</a></li>
-            <li class="navli"><a href="#">MENU3</a></li>        
-
+            <li class="navli"><a href="index.html"><img src="image/logo.png" style="width: 12.5%; margin: 0;"></a></li>
         </ul>
     </nav>
 
