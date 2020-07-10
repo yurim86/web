@@ -327,23 +327,52 @@
           margin-top: 1rem;
     }
    
-
+    #header {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5rem;
+        overflow: hidden;
+    }
+    #menuicon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border-bottom: none;
+    }
+    #logo-index {
+        display: block;
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        margin-left: -24px;
+        z-index: 1;
+    }
   </style>
 
 </head>
     
 <body>
-     <span id="ham">
-         <a href="#" class="hambtn">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-         </a>
-     </span>
-     <span id="logo">
-         <a href="index.html"><img src="image/logo.png" style="width: 10%;"></a>
-     </span>
+    <ul id="header">
+    <li id="menuicon">
+         <span id="ham">
+             <a href="#" class="hambtn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+             </a>
+         </span>
+     </li>
+     <li id="logo-index">
+         <span id="logo" style="display: block;">
+             <a href="index.html"><img src="image/logo.png" style="width: 15%;"></a>
+         </span>
+     </li>
+     </ul>
      <div class="overlay">
          <nav class="menu">
              <ul>
