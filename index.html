@@ -133,7 +133,7 @@
     }
     .hambtn span {
         position: absolute;
-        height: 8px;
+        height: 4px;
         border-radius: 4px;
         width: 100%;
         background: #fff;
@@ -208,7 +208,7 @@
         text-align: center;
     }
     .overlay.visible nav ul li {
-        animation: fadeInLeft 0.3s ease forwards;  
+        animation: fadeInLeft 0.3s ease forwards;
     }
 /* 메뉴가 순차적으로 애니메이션 지연되게 */
     .overlay.visible nav ul li:nth-child(1){
@@ -357,27 +357,70 @@
         margin-left: -24px;
         z-index: 1;
     }
+      
+/*하위 메뉴*/
+    #menuicon_bottom {
+        display: block;
+        width: 100%;
+        border-bottom: none;
+    }
+    #ham_bottom {
+        display: block;
+        padding: 1.5rem;
+/*
+        background-color: #333;
+        height: 5rem;
+*/
+        align-items: center;
+    }
+    .hambtn_bottom {
+        position: relative;
+        display: block;
+        transition: .3s ease-in-out;
+        width: 20px;
+        height: 20px;
+    }
+    .hambtn_bottom span {
+        position: absolute;
+        height: 2px;
+        border-radius: 4px;
+        width: 100%;
+        background: #333;
+/*        top: 0; */
+        transition: 0.2s;
+    }
+  
+    .hambtn_bottom span:nth-child(1), .hambtn_bottom span:nth-child(4) {
+        opacity: 0;   
+    }  
+    .hambtn_bottom span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+    .hambtn_bottom span:nth-child(3) {
+        transform: rotate(-45deg);
+    }   
+
   </style>
 
 </head>
     
 <body>
     <ul id="header">
-    <li id="menuicon">
-         <span id="ham">
-             <a href="#" class="hambtn">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-             </a>
-         </span>
-     </li>
-     <li id="logo-index">
-         <span id="logo" style="display: block;">
-             <a href="index.html"><img src="image/logo.png" style="width: 20%;"></a>
-         </span>
-     </li>
+        <li id="menuicon">
+             <span id="ham">
+                 <a href="#" class="hambtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                 </a>
+             </span>
+         </li>
+         <li id="logo-index">
+             <span id="logo">
+                 <a href="index.html"><img src="image/logo.png" style="width: 18%;"></a>
+             </span>
+         </li>
      </ul>
      <div class="overlay">
          <nav>
@@ -475,11 +518,30 @@
             </header>
            
       </section>
+      
+      <section id="bottom_menu">
+          <ul>
+                <li id="menuicon_bottom">
+                    <span><a href="#">menu1</a></span>
+                    <span id="ham_bottom">
+                         <a href="#" class="hambtn_bottom">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                         </a>
+                     </span>
+              </li>
+                
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+          </ul>
+      </section>
 
 <!-- parallax scrolling 끝 -->
         
       <div id="moveTop">
-           <a href="#top"><img src="image/top.svg" alt="moveTop" style="width: 4em;"></a>
+           <a href="#top"><img src="image/top.svg" alt="moveTop" style="width: 3em;"></a>
       </div>
                     
          
