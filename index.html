@@ -7,7 +7,6 @@
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
   <style>
-/*
     @media (max-width:360px){html{font-size:11px}}
     @media (min-width:361px) and (max-width:399px){html{font-size:12px}}
     @media (min-width:400px) and (max-width:439px){html{font-size:13px}}
@@ -24,7 +23,6 @@
     @media (min-width:800px) and (max-width:839px){html{font-size:23px}}
     @media (min-width:840px) and (max-width:879px){html{font-size:24px}}
     @media (min-width:880px){html{font-size:25px}}
-*/
     
     font-family: arial, sans-serif;
     img{
@@ -113,6 +111,7 @@
       
 /*햄버거 메뉴*/
     #ham {
+        
         display: flex;
         padding: 1.5rem;
         background-color: #333;
@@ -175,7 +174,7 @@
         justify-content: center;
 /*        align-items: center;*/
         font-size: 2rem;
-        transition: 0.3s;
+        transition: 0.3s;        
     }
     nav {
         padding-top: 100px;  
@@ -202,10 +201,12 @@
         100% { opacity: 1; transform: translateX(0);}  
     }  
     .overlay.visible{
-        height: 100%;
+        height: 100vh;
         opacity: 1;
         visibility: visible;
         text-align: center;
+        position:relative;
+        
     }
     .overlay.visible nav ul li {
         animation: fadeInLeft 0.3s ease forwards;
